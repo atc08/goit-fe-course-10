@@ -11,9 +11,9 @@
   </head>
   <body>
     <section class="hero">
-      <header class="hero__header">
-        <a class="hero__header-logo" href="#">MoGo</a>
-        <nav class="hero__pagination pagination">
+      <header class="header">
+        <a class="header__logo" href="#">MoGo</a>
+        <nav class="header__pagination pagination">
           <ul class="pagination__list">
             <li class="pagination__item">
               <a class="pagination__link" href="#">about</a>
@@ -32,7 +32,7 @@
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="#"
-                ><svg class="pagination__link--svg svg__shoppingcart">
+                ><svg class="pagination__link-svg svg__shoppingcart">
                   <use
                     href="./images/icons/sprite/header.svg#shoppingcart"
                   ></use>
@@ -40,13 +40,13 @@
               </a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#"
-                ><svg class="pagination__link--svg svg__magnifyingglass">
+              <button class="pagination__btn" type="button">
+                <svg class="pagination__btn-svg svg__magnifyingglass">
                   <use
                     href="./images/icons/sprite/header.svg#magnifyingglass"
                   ></use>
                 </svg>
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
@@ -63,41 +63,41 @@
         </h2>
         <ul class="services__list">
           <li class="services__item photography">
-            <h3 class="services__item--title">photography</h3>
-            <p class="services__item--description">
+            <h3 class="services__item-title">photography</h3>
+            <p class="services__item-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
           <li class="services__item design">
-            <h3 class="services__item--title">web design</h3>
-            <p class="services__item--description">
+            <h3 class="services__item-title">web design</h3>
+            <p class="services__item-description">
               Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor.
             </p>
           </li>
           <li class="services__item creativity">
-            <h3 class="services__item--title">creativity</h3>
-            <p class="services__item--description">
+            <h3 class="services__item-title">creativity</h3>
+            <p class="services__item-description">
               Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor.
             </p>
           </li>
           <li class="services__item seo">
-            <h3 class="services__item--title">seo</h3>
-            <p class="services__item--description">
+            <h3 class="services__item-title">seo</h3>
+            <p class="services__item-description">
               Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
             </p>
           </li>
           <li class="services__item csshtml">
-            <h3 class="services__item--title">css/html</h3>
-            <p class="services__item--description">
+            <h3 class="services__item-title">css/html</h3>
+            <p class="services__item-description">
               Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
             </p>
           </li>
           <li class="services__item digital">
-            <h3 class="services__item--title">digital</h3>
-            <p class="services__item--description">
+            <h3 class="services__item-title">digital</h3>
+            <p class="services__item-description">
               Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
             </p>
           </li>
@@ -116,7 +116,7 @@
         <ul class="team__list">
           <li class="team__item">
             <img
-              class="team__item--photo"
+              class="team__item-photo"
               srcset="
                 ./images/photo/maninglasses.png    380w,
                 ./images/photo/maninglasses@2x.png 760w
@@ -126,12 +126,12 @@
               src="./images/photo/maninglasses.png"
               alt="man in glasses"
             />
-            <p class="team__item--name">matthew dix</p>
-            <p class="team__item--position">Graphic Design</p>
+            <p class="team__item-name">matthew dix</p>
+            <p class="team__item-position">Graphic Design</p>
           </li>
           <li class="team__item">
             <img
-              class="team__item--photo"
+              class="team__item-photo"
               srcset="
                 ./images/photo/manwithcamera.png    380w,
                 ./images/photo/manwithcamera@2x.png 760w
@@ -141,12 +141,12 @@
               src="./images/photo/manwithcamera.png"
               alt="man with camera"
             />
-            <p class="team__item--name">christopher campbell</p>
-            <p class="team__item--position">Branding/UX design</p>
+            <p class="team__item-name">christopher campbell</p>
+            <p class="team__item-position">Branding/UX design</p>
           </li>
           <li class="team__item">
             <img
-              class="team__item--photo"
+              class="team__item-photo"
               srcset="
                 ./images/photo/beardman.png    380w,
                 ./images/photo/beardman@2x.png 760w
@@ -156,8 +156,8 @@
               src="./images/photo/beardman.png"
               alt="beardman"
             />
-            <p class="team__item--name">michael fertig</p>
-            <p class="team__item--position">Developer</p>
+            <p class="team__item-name">michael fertig</p>
+            <p class="team__item-position">Developer</p>
           </li>
         </ul>
       </section>
@@ -169,12 +169,12 @@
       </p>
       <form class="footer__form" action="#">
         <input
-          class="footer__form--input"
+          class="footer__form-input"
           name="user_email"
           placeholder="Your Email..."
           type="email"
         />
-        <button class="footer__form--btn" type="submit">subscribe</button>
+        <button class="footer__btn" type="submit">subscribe</button>
       </form>
     </footer>
   </body>

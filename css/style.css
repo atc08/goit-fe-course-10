@@ -81,7 +81,7 @@ body {
   }
 }
 
-.hero__header {
+.header {
   width: 1197px;
   display: flex;
   justify-content: space-between;
@@ -89,7 +89,7 @@ body {
   margin: 0 auto 152px;
 }
 
-.hero__header-logo {
+.header__logo {
   color: rgb(255, 255, 255);
   font-family: var(--main-font);
   font-size: 30px;
@@ -110,7 +110,8 @@ body {
   text-transform: uppercase;
 }
 
-.pagination__link::after {
+.pagination__link::after,
+.pagination__btn::after {
   content: "";
   display: block;
   width: 100%;
@@ -125,17 +126,38 @@ body {
   color: rgb(252, 227, 138);
 }
 
-.pagination__link--svg {
+.pagination__link-svg {
+  width: 18px;
+  height: 15px;
+  fill: rgb(255, 255, 255);
+}
+
+.pagination__link:hover .pagination__link-svg {
+  fill: rgb(252, 227, 138);
+}
+
+.pagination__link:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pagination__btn {
+  width: 18px;
+  height: 18px;
+  background-color: unset;
+}
+
+.pagination__btn-svg {
   width: 18px;
   height: 18px;
   fill: rgb(255, 255, 255);
 }
 
-.pagination__link:hover .pagination__link--svg {
+.pagination__btn:hover .pagination__btn-svg {
   fill: rgb(252, 227, 138);
 }
 
-.pagination__link:hover::after {
+.pagination__btn:hover::after {
   visibility: visible;
   opacity: 1;
 }
@@ -233,7 +255,7 @@ body {
   margin-bottom: 95px;
 }
 
-.services__item--title {
+.services__item-title {
   color: rgb(51, 51, 51);
   font-family: var(--main-font);
   font-size: 14px;
@@ -242,7 +264,7 @@ body {
   margin-bottom: 11px;
 }
 
-.services__item--description,
+.services__item-description,
 .team__description {
   color: rgb(153, 153, 153);
   font-family: var(--second-font);
@@ -307,20 +329,20 @@ body {
   justify-content: space-between;
 }
 
-.team__item--photo {
+.team__item-photo {
   margin-bottom: 26px;
 }
 
-.team__item--name {
+.team__item-name {
   color: rgb(51, 51, 51);
   font-family: var(--main-font);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
 
-.team__item--position {
+.team__item-position {
   color: rgb(153, 153, 153);
   font-family: var(--second-font);
   font-size: 15px;
