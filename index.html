@@ -13,42 +13,46 @@
     <section class="hero">
       <header class="header">
         <a class="header__logo" href="#">MoGo</a>
-        <nav class="header__pagination pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">about</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">services</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">work</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">blog</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">contact</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#"
-                ><svg class="pagination__link-svg svg__shoppingcart">
-                  <use
-                    href="./images/icons/sprite/header.svg#shoppingcart"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="pagination__item">
-              <button class="pagination__btn" type="button">
-                <svg class="pagination__btn-svg svg__magnifyingglass">
-                  <use
-                    href="./images/icons/sprite/header.svg#magnifyingglass"
-                  ></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
+        <nav class="header__navigation navigation">
+          <div class="navigation__wrapper">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">about</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">service</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">work</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">blog</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">contact</a>
+              </li>
+            </ul>
+            <ul class="navigation__addlist">
+              <li class="navigation__addlist-item">
+                <a class="navigation__addlist-link" href="#"
+                  ><svg class="navigation__svg">
+                    <use
+                      href="./images/icons/sprite/header.svg#shoppingcart"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation__adlist-item">
+                <button class="navigation__btn" type="button">
+                  <svg class="navigation__btn-svg">
+                    <use
+                      href="./images/icons/sprite/header.svg#magnifyingglass"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <p class="hero__text">Creative Template</p>
@@ -126,8 +130,50 @@
               src="./images/photo/maninglasses.png"
               alt="man in glasses"
             />
-            <p class="team__item-name">matthew dix</p>
-            <p class="team__item-position">Graphic Design</p>
+            <div class="overlay">
+              <ul class="overlay__list">
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#">
+                    <svg class="overlay__svg">
+                      <title>facebook</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>twitter</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>pinterest</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#pinterest"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>instagram</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="team__item">
             <img
@@ -141,8 +187,50 @@
               src="./images/photo/manwithcamera.png"
               alt="man with camera"
             />
-            <p class="team__item-name">christopher campbell</p>
-            <p class="team__item-position">Branding/UX design</p>
+            <div class="overlay">
+              <ul class="overlay__list">
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#">
+                    <svg class="overlay__svg">
+                      <title>facebook</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>twitter</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>pinterest</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#pinterest"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>instagram</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="team__item">
             <img
@@ -156,6 +244,62 @@
               src="./images/photo/beardman.png"
               alt="beardman"
             />
+            <div class="overlay">
+              <ul class="overlay__list">
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#">
+                    <svg class="overlay__svg">
+                      <title>facebook</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>twitter</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>pinterest</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#pinterest"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="overlay__item">
+                  <a class="overlay__link" href="#"
+                    ><svg class="overlay__svg">
+                      <title>instagram</title>
+                      <use
+                        href="./images/icons/sprite/social-team.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="team__list-namepos">
+          <li class="team__item-namepos">
+            <p class="team__item-name">matthew dix</p>
+            <p class="team__item-position">Graphic Design</p>
+          </li>
+          <li class="team__item-namepos">
+            <p class="team__item-name">christopher campbell</p>
+            <p class="team__item-position">Branding/UX design</p>
+          </li>
+          <li class="team__item-namepos">
             <p class="team__item-name">michael fertig</p>
             <p class="team__item-position">Developer</p>
           </li>
