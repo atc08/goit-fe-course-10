@@ -595,11 +595,23 @@ body {
   height: 40px;
   border: 1px solid rgb(231, 231, 231);
   padding-left: 13px;
-  color: #cccccc;
+  color: rgb(0, 0, 0);
   font-family: var(--second-font);
   font-size: 15px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.footer__form-input::placeholder,
+.footer__form-input::-webkit-input-placeholder,
+.footer__form-input::-moz-placeholder,
+.footer__form-input:-ms-input-placeholder,
+.footer__form-input::-ms-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.footer__form-input:focus {
+  outline: none;
 }
 
 .footer__btn {
