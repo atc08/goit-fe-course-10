@@ -428,6 +428,10 @@ body {
 .team__item:hover .overlay {
   visibility: visible;
   opacity: 1;
+  top: -10px;
+  left: -10px;
+  -webkit-box-shadow: 10px 10px rgb(149, 225, 211);
+  box-shadow: 10px 10px rgb(149, 225, 211);
 }
 
 .team__list-namepos {
@@ -497,6 +501,7 @@ body {
   left: 0;
   visibility: hidden;
   opacity: 0;
+  box-shadow: 0 0 rgb(149, 225, 211);
   -webkit-transition-property: top, left, -webkit-box-shadow;
   transition-property: top, left, -webkit-box-shadow;
   -o-transition-property: top, left, box-shadow;
@@ -508,13 +513,6 @@ body {
   -webkit-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
-}
-
-.overlay:hover {
-  top: -10px;
-  left: -10px;
-  -webkit-box-shadow: 10px 10px rgb(149, 225, 211);
-  box-shadow: 10px 10px rgb(149, 225, 211);
 }
 
 .overlay__list {
@@ -536,6 +534,10 @@ body {
   width: 56px;
   height: 56px;
   background-color: rgb(252, 227, 138);
+}
+
+.overlay__item:not(:last-child) {
+  border-right: 1px solid rgba(243, 129, 129, 0.5);
 }
 
 .overlay__item:hover {
