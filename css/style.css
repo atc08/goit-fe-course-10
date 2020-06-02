@@ -501,6 +501,7 @@ body {
   left: 0;
   visibility: hidden;
   opacity: 0;
+  -webkit-box-shadow: 0 0 rgb(149, 225, 211);
   box-shadow: 0 0 rgb(149, 225, 211);
   -webkit-transition-property: top, left, -webkit-box-shadow;
   transition-property: top, left, -webkit-box-shadow;
